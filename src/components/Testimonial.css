@@ -1,0 +1,46 @@
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimonial-container p {
+  color: #4f5665;
+}
+
+.reviews {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.sliding-points {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* width: fit-content; */
+  /* margin-right: auto; */
+  justify-content: space-between;
+}
+
+.points-container {
+  display: flex;
+  gap: 10px;
+}
+
+.rectangle {
+  width: 21px;
+  height: 8px;
+  border-radius: 20px;
+  background: #f53838;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  background: #dde0e4;
+  border-radius: 50%;
+}

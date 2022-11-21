@@ -1,0 +1,17 @@
+.left-right-arr-container {
+  display: flex;
+  gap: 8px;
+  margin-right: 30px;
+}
+.left-arr,
+.right-arr {
+  color: #f53838;
+  padding: 5px 7px;
+  border: 1px solid #f53838;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.right-arr {
+  background: #f53838;
+  color: white;
+}

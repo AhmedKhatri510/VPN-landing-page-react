@@ -1,0 +1,51 @@
+.review-container {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+}
+
+.review-text {
+  color: #0b132a;
+  font-size: 12px;
+}
+
+.user-detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-detail img:first-child {
+  height: 40px;
+}
+
+.user-detail div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: auto;
+}
+
+.name,
+.place {
+  margin: 0;
+}
+
+.name {
+  font-size: 12px;
+}
+
+.place {
+  font-size: 9px;
+}
+
+.rating {
+  font-size: 12px;
+}
+
+.star {
+  height: 12px;
+}
