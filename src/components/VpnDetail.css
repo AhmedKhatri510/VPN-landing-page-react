@@ -1,0 +1,34 @@
+.vpnDetail-container {
+  display: flex;
+  width: 520px;
+  height: 20vh;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+
+  margin-top: 20px;
+}
+
+.vpnDetail-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.vpnDetail-item img {
+  height: 23px;
+  width: 23px;
+  padding: 5px;
+  border-radius: 50%;
+  background: #ffecec;
+}
+
+.vpnDetail-item div p,
+h3 {
+  margin: 0;
+}
+
+.vpnDetail-item div p {
+  font-size: 14px;
+  color: #4f5665;
+}

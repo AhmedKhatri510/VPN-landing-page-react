@@ -1,0 +1,16 @@
+.plan-container {
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan-container p {
+  color: #4f5665;
+}
+
+.plan-cards {
+  display: flex;
+  gap: 30px;
+}

@@ -1,0 +1,33 @@
+.getStarted-container {
+  display: flex;
+  margin-top: 8vh;
+  height: 50vh;
+}
+
+.getStarted-container img {
+  flex: 1;
+}
+
+.getStarted-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.getStarted-content h1 {
+  font-size: 40px;
+}
+
+.btn-getStarted {
+  align-self: flex-start;
+
+  background: #f53838;
+  border-radius: 5px;
+
+  border: none;
+  padding: 8px 30px;
+
+  color: white;
+  box-shadow: 4px 6px 8px #f538387d;
+}

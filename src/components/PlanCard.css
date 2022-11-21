@@ -1,0 +1,50 @@
+.planCard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 1px solid #dddddd;
+
+  /* width: 155.04px; */
+  height: fit-content;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.planCard-container h3 {
+  margin-top: 8px;
+}
+
+.planCard-container ul {
+  line-height: 28px;
+  height: 200px;
+}
+
+.planCard-container ul li img {
+  margin-right: 6px;
+}
+.planCard-container ul li {
+  color: #4f5665;
+}
+
+.planCard-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.planCard-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.planCard-container div span {
+  color: #4f5665;
+  font-size: 16px;
+  font-weight: 500;
+}
+.box-image {
+}
+
+.btn-outline {
+}
