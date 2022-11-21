@@ -1,0 +1,16 @@
+.vpn-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  gap: 5px;
+}
+
+.vpn-detail-container p {
+  color: #4f5665;
+}
+
+.vpn-detail-container img {
+  height: 60vh;
+}
