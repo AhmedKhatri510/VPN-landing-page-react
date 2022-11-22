@@ -12,8 +12,11 @@
 .reviews {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  min-width: fit-content;
+  justify-content: center;
   gap: 50px;
+  overflow: hidden;
+  transition: all 2s;
 }
 
 .sliding-points {

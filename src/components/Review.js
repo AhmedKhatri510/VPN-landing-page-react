@@ -1,8 +1,10 @@
 import "./Review.css";
 
-export default function Review({ userPhoto, name, place, reviewText }) {
+export default function Review({ userPhoto, name, place, reviewText, active }) {
   return (
-    <div className="review-container">
+    <div
+      className={"review-container" + (active === 1 ? " active-review" : "")}
+    >
       <div className="user-detail">
         <img src={"/Assets/" + userPhoto} alt="user-photo" />
         <div>

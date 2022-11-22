@@ -49,3 +49,7 @@
 .star {
   height: 12px;
 }
+
+.active-review {
+  border: 1px solid #f53838 !important;
+}
