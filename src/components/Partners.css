@@ -5,7 +5,9 @@
 
 @media screen and (max-width: 500px) {
   .partner-container {
+    flex-direction: column;
     width: 100%;
+    gap: 8px;
   }
   .partner-container img {
     height: 5vh;
@@ -14,7 +16,5 @@
 
 @media screen and (max-width: 400px) {
   .partner-container {
-    flex-direction: column;
-    gap: 8px;
   }
 }
