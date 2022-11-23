@@ -53,3 +53,14 @@
 .active-review {
   border: 1px solid #f53838 !important;
 }
+
+@media screen and (max-width: 300px) {
+  .review-container {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+  }
+}

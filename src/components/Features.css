@@ -33,3 +33,37 @@
   color: #4f5665;
   padding: 0;
 }
+
+@media screen and (max-width: 1000px) {
+  .feature-container {
+    flex-direction: column-reverse;
+    height: 100vh;
+    gap: 10px;
+  }
+
+  .illustrator-img {
+    height: 40vh;
+  }
+
+  .feature-content-container h1 {
+    font-size: 30px;
+  }
+
+  .feature-content-container {
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .feature-content-container h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .feature-content-container h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+}

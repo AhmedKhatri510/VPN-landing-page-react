@@ -1,17 +1,22 @@
 import "./LeftRightArr.css";
 
-export default function LeftRightArr({ setActiveReview, setActiveRect }) {
-  const htmlColl = document.getElementsByClassName("review-container");
+export default function LeftRightArr({
+  setActiveReview,
+  setActiveRect,
+  setHideReview,
+}) {
+  let htmlColl = document.getElementsByClassName("review-container");
   const pointsContainerColl =
     document.getElementsByClassName("points-container")[0]?.children;
-
+  // console.log(document.getElementsByClassName("points-container")[0]?.children);
   // console.log(pointsContainerColl);
 
   let nextHtmlIdx;
   let nextPtIdx;
 
   function shiftPointRight() {
-    console.log(pointsContainerColl);
+    const pointsContainerColl =
+      document.getElementsByClassName("points-container")[0]?.children;
 
     for (let i = 0; i < pointsContainerColl.length - 1; i++) {
       console.log(pointsContainerColl[i].className);
@@ -38,12 +43,35 @@ export default function LeftRightArr({ setActiveReview, setActiveRect }) {
     setActiveRect(nextPtIdx);
   }
 
+  function shiftPointLeft() {
+    const pointsContainerColl =
+      document.getElementsByClassName("points-container")[0]?.children;
+
+    for (let i = pointsContainerColl.length - 2; i >= 0; i--) {
+      console.log(pointsContainerColl[i].className);
+      console.log(i);
+      if (pointsContainerColl[i].className === "rectangle" && i !== 0) {
+        nextPtIdx = i;
+        console.log("hello1");
+        break;
+      }
+
+      if (pointsContainerColl[i].className === "rectangle" && i === 0) {
+        nextPtIdx = pointsContainerColl.length - 1;
+        console.log("hello2");
+        break;
+      }
+    }
+
+    setActiveRect(nextPtIdx);
+  }
+
   function handleRightClick(e) {
     e.preventDefault();
 
     //shifting points to the right
     // console.log(pointsContainerColl);
-
+    console.log(window.visualViewport.width);
     //shifting border to the right
 
     for (let i = 0; i < htmlColl.length; i++) {
@@ -61,6 +89,13 @@ export default function LeftRightArr({ setActiveReview, setActiveRect }) {
     }
 
     const activeUser = htmlColl[nextHtmlIdx];
+
+    //------------------------
+    // let activeReviewIdx;
+    // console.log(htmlColl);
+    // htmlColl
+
+    //------------------------
 
     const name =
       activeUser.children[0].getElementsByClassName("name")[0].innerText;
@@ -90,6 +125,7 @@ export default function LeftRightArr({ setActiveReview, setActiveRect }) {
     const name =
       activeUser.children[0].getElementsByClassName("name")[0].innerText;
 
+    shiftPointLeft();
     setActiveReview(name);
 
     console.log(name);

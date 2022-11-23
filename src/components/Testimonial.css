@@ -1,8 +1,14 @@
+/* .a-container {
+  height: fit-content;
+  /* display: flex; */
+
 .testimonial-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+
+  transform: translateY(10vh);
 }
 
 .testimonial-container p {
@@ -17,6 +23,9 @@
   gap: 50px;
   overflow: hidden;
   transition: all 2s;
+
+  height: 30vh;
+  align-items: center;
 }
 
 .sliding-points {
@@ -46,4 +55,17 @@
   height: 8px;
   background: #dde0e4;
   border-radius: 50%;
+}
+
+.hide-review {
+  display: none;
+}
+.a-review {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .testimonial-container h1 {
+    text-align: center;
+  }
 }

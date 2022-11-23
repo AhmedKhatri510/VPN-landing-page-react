@@ -48,3 +48,23 @@
 
 .btn-outline {
 }
+
+@media screen and (max-width: 640px) {
+  .planCard-container {
+    width: fit-content;
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .planCard-container ul {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .planCard-container ul {
+    line-height: 20px;
+    height: 200px;
+  }
+}

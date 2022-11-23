@@ -2,3 +2,19 @@
   display: flex;
   justify-content: space-around;
 }
+
+@media screen and (max-width: 500px) {
+  .partner-container {
+    width: 100%;
+  }
+  .partner-container img {
+    height: 5vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .partner-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

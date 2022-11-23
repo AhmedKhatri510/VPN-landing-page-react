@@ -8,9 +8,23 @@
 
 .plan-container p {
   color: #4f5665;
+  text-align: center;
 }
 
 .plan-cards {
   display: flex;
   gap: 30px;
+}
+
+@media screen and (max-width: 640px) {
+  .plan-container h1 {
+    text-align: center;
+  }
+
+  .plan-cards {
+    display: flex;
+    gap: 30px;
+
+    flex-direction: column;
+  }
 }

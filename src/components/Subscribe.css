@@ -1,0 +1,51 @@
+.subscribe-container {
+  display: flex;
+  gap: 40px;
+  border-radius: 20px;
+  /* z-index: 999999999999999999; */
+
+  background: white;
+
+  padding: 20px;
+
+  transform: translateY(50%);
+  justify-content: center;
+  width: fit-content;
+  margin: auto;
+}
+
+.subscribe-container div h1 {
+  width: 55%;
+}
+.subscribe-container div p {
+  color: #4f5665;
+}
+
+.btn-subscribe {
+  align-self: center;
+
+  background: #f53838;
+  border-radius: 5px;
+
+  border: none;
+  padding: 8px 30px;
+
+  color: white;
+  box-shadow: 4px 6px 8px #f538387d;
+
+  min-width: 160px;
+}
+
+@media screen and (max-width: 550px) {
+  .subscribe-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .subscribe-container div h1,
+  p {
+    width: 100%;
+    text-align: center;
+  }
+}

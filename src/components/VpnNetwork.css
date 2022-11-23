@@ -14,3 +14,16 @@
 .vpn-detail-container img {
   height: 60vh;
 }
+
+@media screen and (max-width: 700px) {
+  .vpn-detail-container h1 {
+    text-align: center;
+  }
+  .vpn-detail-container img {
+    height: 80vh;
+    width: 100%;
+  }
+  .vpn-detail-container {
+    height: 100vh;
+  }
+}

@@ -1,4 +1,5 @@
 import Features from "./components/Features";
+import Footer from "./components/Footer";
 import GetStarted from "./components/GetStartedPage";
 import Navbar from "./components/Navbar";
 import Partners from "./components/Partners";
@@ -18,6 +19,7 @@ function App() {
       <VpnNetwork />
       <Partners />
       <Testimonial />
+      <Footer />
     </div>
   );
 }
